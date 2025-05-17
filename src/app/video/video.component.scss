@@ -1,0 +1,121 @@
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif; /* Используем Roboto, или замените на свой шрифт */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #83f55d;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 600;
+    color: #222;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    font-size: 2em;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+  }
+  
+  a {
+    color: #222;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Навигация */
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  /* Курсы */
+  .course {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+  }
+  
+  .course img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .course h3 {
+    margin-top: 0;
+  }
+  
+  /* Галерея */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery-item {
+    width: 200px;
+    margin: 10px;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Футер */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Отзывчивость */
+  @media (max-width: 768px) {
+    nav ul {
+      text-align: left;
+    }
+    nav li {
+      display: block;
+      margin: 10px 0;
+    }
+    .course {
+      width: 100%;
+    }
+    .gallery-item {
+      width: 45%; /* Занимает 45% ширины на маленьких экранах */
+      box-sizing: border-box; /* Учитывает padding и margin в ширину элемента */
+    }
+  }

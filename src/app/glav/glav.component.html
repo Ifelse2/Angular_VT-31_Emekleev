@@ -1,0 +1,6 @@
+<h1>Что мы предлагаем:</h1>
+<li>
+  <p *ngIf="courses.length==0;else title">Курсов нет</p>
+  <ng-template #title>
+    <app-cardcomponent *ngFor="let card of courses" title="{{card.title}}" TextP="{{card.TextP}}">Курсы</app-cardcomponent>
+  </ng-template>
